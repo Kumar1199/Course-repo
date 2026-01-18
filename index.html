@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Master Python: From Foundation to Data Science</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+         :root {
+            --primary: #3776ab;
+            /* Python Blue */
+            --secondary: #ffd43b;
+            /* Python Yellow */
+            --dark: #2c3e50;
+            --light: #f8f9fa;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: var(--dark);
+            background-color: var(--light);
+            line-height: 1.6;
+        }
+        /* Hero Section */
+        
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            height: 60vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            padding: 20px;
+        }
+        
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 800px;
+        }
+        /* Course Info Cards */
+        
+        .highlight-bar {
+            background: var(--primary);
+            color: white;
+            padding: 20px 0;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+        /* Quotes Section */
+        
+        .quote-container {
+            padding: 50px 20px;
+            background: #fff;
+            text-align: center;
+            font-style: italic;
+            color: #555;
+        }
+        /* Curriculum Section */
+        
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+        
+        .section-title {
+            text-align: center;
+            color: var(--primary);
+            margin-bottom: 40px;
+        }
+        
+        .module {
+            background: white;
+            border-left: 5px solid var(--primary);
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        .module h3 {
+            margin-top: 0;
+            color: var(--primary);
+        }
+        
+        .mini-project {
+            background: #eef2f7;
+            padding: 10px 15px;
+            border-radius: 5px;
+            margin-top: 10px;
+            font-weight: 500;
+        }
+        /* Register Button */
+        
+        .cta-container {
+            text-align: center;
+            margin: 50px 0;
+        }
+        
+        .btn-register {
+            background-color: var(--secondary);
+            color: var(--dark);
+            padding: 15px 40px;
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 50px;
+            transition: transform 0.3s ease;
+            display: inline-block;
+        }
+        
+        .btn-register:hover {
+            transform: scale(1.05);
+            background-color: #f7ca18;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: var(--dark);
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="hero">
+        <h1>Complete Python Mastery</h1>
+        <p>45 Day Live Classes, Projects, Career Guidance, and Placement Assistance </p>
+    </section>
+
+    <div class="highlight-bar">
+        <span>✓ Live Classes</span>
+        <span>✓ Real-world Projects</span>
+        <span>✓ Career Support</span>
+        <span>✓ From Scratch to Pro</span>
+    </div>
+
+    <div class="quote-container">
+        <h2>"The only way to learn a new programming language is by writing programs in it."</h2>
+        <p>— Dennis Ritchie</p>
+    </div>
+
+    <div class="container">
+        <h2 class="section-title">Course Curriculum</h2>
+
+        <h2>Part 1: The Python Foundation </h2>
+        <div class="module">
+            <h3>Module 1: Syntax & Variables</h3>
+            <p><strong>Topics:</strong> Data types (int, float, string, bool), Operators, input(), print(), f-string.</p>
+            <div class="mini-project">Mini-Project: The "Mad Libs" Generator </div>
+        </div>
+
+        <div class="module">
+            <h3>Module 2: Logic & Control Flow</h3>
+            <p><strong>Topics:</strong> if/else, comparison operators, while and for loops, range(), nested ifs and loops.</p>
+            <div class="mini-project">Mini-Project: Number Guessing Game </div>
+        </div>
+
+        <div class="module">
+            <h3>Module 3: Python Collections</h3>
+            <p><strong>Topics:</strong> Lists, Tuples, Sets, Dictionaries.</p>
+            <div class="mini-project">Mini-Project: Personal Contact Book </div>
+        </div>
+
+        <h2>Part 2: The Data Science Stack </h2>
+        <div class="module">
+            <h3>Module 4: Numerical Power with NumPy</h3>
+            <p><strong>Topics:</strong> Strides & Memory Layout, ndarrays, broadcasting, reshaping, statistical functions.</p>
+            <div class="mini-project">Mini-Project: Grade Calculator </div>
+        </div>
+
+        <div class="module">
+            <h3>Module 5: Data Wrangling with Pandas</h3>
+            <p><strong>Topics:</strong> DataFrames, loc/iloc, filtering, handling NaN, Method Chaining, Window Functions.</p>
+            <div class="mini-project">Mini-Project: Sales Report Analyzer </div>
+        </div>
+
+        <div class="module">
+            <h3>Module 6: Visualization with Matplotlib</h3>
+            <p><strong>Topics:</strong> Line plots, Bar charts, Scatter plots, Subplots, Figure vs. Axes.</p>
+            <div class="mini-project">Mini-Project: Weather Trend Visualizer </div>
+        </div>
+
+        <div class="module" style="background: #fff9e6; border-color: var(--secondary);">
+            <h3>Major Project: "Global Health & Wealth" Dashboard</h3>
+            <p>A comprehensive capstone project combining data analysis with NumPy/Pandas and visualization with Matplotlib.</p>
+        </div>
+    </div>
+
+    <div class="cta-container">
+        <a href="https://forms.gle/dQadP3kr3Hwk5Xu18" class="btn-register" target="_blank">Register Now!</a>
+    </div>
+
+    <div class="quote-container" style="background: #f0f0f0;">
+        <h2>"Data is the new oil, but Python is the engine that refines it."</h2>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Python Mastery Course. All Rights Reserved.</p>
+    </footer>
+
+</body>
+
+</html>
